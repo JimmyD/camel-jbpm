@@ -31,7 +31,7 @@
             <setHeader headerName="CamelJBPMProcessId">
                 <constant>customer.evaluation</constant>
             </setHeader>
-            <to uri="jbpm:http://127.0.0.1:8080/business-central?userName=bpmsAdmin&amp;password=pa$word1&amp;deploymentId=customer:evaluation:1.0"/>
+            <to uri="jbpm:http://jbpm:8080/business-central?userName=bpmsAdmin&amp;password=pa$word1&amp;deploymentId=customer:evaluation:1.0"/>
 
             <log loggingLevel="INFO" message="jBPM Called"/>
         </route>
